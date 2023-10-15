@@ -15,7 +15,7 @@ function InProgress(props) {
 
 
     const result = copy.map((element, index) => {
-        return <p key={index}>{element.name}</p>
+        return <p className='cssFor' key={index}>{element.name}</p>
     });
 
     const [text, setText] = useState('');
@@ -29,7 +29,7 @@ function InProgress(props) {
         <div className='box'>
             <div className='box_inter'>
                 <p>In Progress</p>
-                <p>value: {props.value}</p>
+                {/* <p>value: {props.value}</p> */}
                 {/* {people?.map(p => <span>{p.first}</span>)} */}
                 <p>{result}</p>
                 <input type='text' id="fname" class='i-1' value={text} onChange={changeText} /><br/>
